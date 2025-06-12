@@ -1,0 +1,9 @@
+javascript is dynamically type language not static type becouse whenever we define variable we can not define the datatype like other languages , ex:-
+   int a=10;
+   char str="abc
+
+// dynamic 
+ const a=10 
+ let b="string" 
+
+here we just define keyword to create variale that value asign any type of data 
