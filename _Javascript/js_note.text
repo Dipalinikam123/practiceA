@@ -7,3 +7,43 @@ javascript is dynamically type language not static type becouse whenever we defi
  let b="string" 
 
 here we just define keyword to create variale that value asign any type of data 
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+How javascript run fles
+
+When JavaScript runs a script, the engine (like V8 in Chrome) processes code in two phases:
+1]- Memory Creation Phase (a.k.a. Hoisting Phase)
+    JavaScript scans the code to allocate memory for variables and functions.
+
+2]-Execution Phase
+   JavaScript executes the code line by line.
+
+Keyword	Hoisted	   Initialized in Memory   Phase	In TDZ?	   Access Before Declaration
+var	   ✅ Yes	      ✅ undefined	         ❌ No	            ✅ Allowed (undefined)
+let	   ✅ Yes	      ❌ No (TDZ)	         ✅ Yes	            ❌ Throws ReferenceError
+const	   ✅ Yes	      ❌ No (TDZ)	         ✅ Yes	            ❌ Throws ReferenceError
+
+
+console.log(a); // undefined
+console.log(b); // ReferenceError
+console.log(c); // ReferenceError
+
+var a = 1;
+let b = 2;
+const c = 3;
+
+a -> undefined     ✅ accessible
+b -> TDZ           ❌ not accessible
+c -> TDZ           ❌ not accessible
+
+What is TDZ?
+TDZ stands for Temporal Dead Zone.
+It is the time between when a let or const variable is hoisted and when it is actually declared in the code.
+
+During this time:
+The variable exists in memory
+But you cannot use it yet
+If you try, JavaScript will throw a ReferenceError
+
