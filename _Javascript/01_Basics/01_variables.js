@@ -28,4 +28,7 @@ console.table([accountId,accountEmail,accountName,city,accountStatus])
 
 //  ----- 2 non Primitive ----------
 
+// object // function //array
 
+console.log(typeof undefined); // undefined
+console.log(typeof null); // object
