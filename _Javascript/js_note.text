@@ -11,7 +11,7 @@ here we just define keyword to create variale that value asign any type of data
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-How javascript run fles
+#### How javascript run fles
 
 When JavaScript runs a script, the engine (like V8 in Chrome) processes code in two phases:
 1]- Memory Creation Phase (a.k.a. Hoisting Phase)
@@ -47,3 +47,13 @@ The variable exists in memory
 But you cannot use it yet
 If you try, JavaScript will throw a ReferenceError
 
+### with function 
+  function store definition of the function and whenever function call it's create new memory execution for the function parameter or variable and execution phase and return the value to global execution and then deleted every time 
+
+function define            ✅ accessible
+arrow function -> TDZ      ❌ not accessible
+function expession -> TDZ  ❌ not accessible
+
+Arrow functions and function expressions get into the TDZ (Temporal Dead Zone) because they are stored in variables declared using let or const.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
