@@ -57,3 +57,11 @@ function expession -> TDZ  ❌ not accessible
 Arrow functions and function expressions get into the TDZ (Temporal Dead Zone) because they are stored in variables declared using let or const.
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  by default js is single threded and synchronous language 
+
+  each operation waits for the last one to complete before executing
+  code run one by one is call single threaded
+
+  ## blocking code => block the flow of program (synchronous)
+  ## non-blocking code => do not block execution (asynchronous)
